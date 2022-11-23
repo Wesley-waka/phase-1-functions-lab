@@ -1,4 +1,4 @@
-let dist = 0;
+let dist ;
 
 function distanceFromHqInBlocks(block) {
   dist = Math.abs(42 - block);
@@ -9,7 +9,7 @@ function distanceFromHqInBlocks(block) {
 function distanceFromHqInFeet(distance) {
     let dB = distanceFromHqInBlocks(distance);
 
-    let f = 0;
+    let f ;
     f = dB * 264;
     return f;
 }
@@ -33,7 +33,7 @@ function distanceTravelledInFeet (start, destination){
 }
 function calculatesFarePrice(start, destination) {
     let disBlock = Math.abs(start - destination) * 264;
-    let fare = 0;
+    let fare ;
     let disPast400 = disBlock - 400;
   
     if (disBlock <= 400) {
